@@ -34,6 +34,8 @@ function buildFollowUps(client: string, outcome: string) {
   ];
 }
 
+const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function GeneratorPage() {
   const [proposal, setProposal] = useState<Proposal>(defaults);
   const [generated, setGenerated] = useState<Proposal>(defaults);
@@ -59,9 +61,9 @@ export default function GeneratorPage() {
   return (
     <main className="page generator-page">
       <nav className="container nav" aria-label="Ana menü">
-        <a className="brand" href="/"><span className="logo">TJ</span> TeklifJet</a>
+        <a className="brand" href={`${siteBasePath}/`}><span className="logo">TJ</span> TeklifJet</a>
         <div className="nav-links">
-          <a href="/">Landing</a>
+          <a href={`${siteBasePath}/`}>Landing</a>
           <a href="#teklif">Teklif</a>
           <a href={mailtoHref}>Pilot al</a>
         </div>

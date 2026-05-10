@@ -2,9 +2,8 @@
 
 import { FormEvent, useMemo, useState } from "react";
 
-const whatsappText = encodeURIComponent(
-  "Merhaba, TeklifJet ₺499 pilotuna katılmak istiyorum. 1 teklif şablonu + takip sistemi için görüşelim."
-);
+const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://teklifjet.vercel.app";
 
 export default function Home() {
   const [notice, setNotice] = useState("");
@@ -15,6 +14,12 @@ export default function Home() {
     );
     return `mailto:goktug@datrick.com?subject=${subject}&body=${body}`;
   }, []);
+  const whatsappText = useMemo(
+    () => encodeURIComponent(
+      `Merhaba, TeklifJet ₺499 pilotuna katılmak istiyorum. 1 teklif şablonu + takip sistemi için görüşelim. Demo: ${siteUrl}/generator/`
+    ),
+    []
+  );
 
   async function submitLead(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -60,7 +65,7 @@ export default function Home() {
           </p>
           <div className="cta-row">
             <a className="button primary" href="#basvur">₺499 pilot başvurusu</a>
-            <a className="button secondary" href="/generator">Canlı demo oluştur</a>
+            <a className="button secondary" href={`${siteBasePath}/generator/`}>Canlı demo oluştur</a>
             <a className="button secondary" href={`https://wa.me/?text=${whatsappText}`}>WhatsApp metnini aç</a>
           </div>
           <p className="microcopy">Kredi kartı entegrasyonu yoksa bile manuel fatura/EFT ile satılacak şekilde tasarlandı.</p>

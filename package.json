@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "build:pages": "GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/teklifjet NEXT_PUBLIC_SITE_URL=https://goktugozdem2.github.io/teklifjet npm run build && node scripts/prepare-pages-export.mjs && node scripts/verify-pages-export.mjs"
   },
   "dependencies": {
     "next": "latest",
