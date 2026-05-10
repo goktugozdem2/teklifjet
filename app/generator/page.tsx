@@ -64,6 +64,7 @@ export default function GeneratorPage() {
         <a className="brand" href={`${siteBasePath}/`}><span className="logo">TJ</span> TeklifJet</a>
         <div className="nav-links">
           <a href={`${siteBasePath}/`}>Landing</a>
+          <a href={`${siteBasePath}/sample/`}>Örnek teslimat</a>
           <a href="#teklif">Teklif</a>
           <a href={mailtoHref}>Pilot al</a>
         </div>

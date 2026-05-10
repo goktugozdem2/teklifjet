@@ -8,6 +8,9 @@ const checks = [
   ['/generator', 'Canlı teklif taslağı oluşturucu'],
   ['/generator', 'Teklif taslağını üret'],
   ['/generator', 'E-posta ile pilotu başlat'],
+  ['/sample', 'Örnek TeklifJet teslimatı'],
+  ['/sample', '24 saat takip mesajı'],
+  ['/sample', 'E-posta ile pilotu başlat'],
   ['/robots.txt', 'sitemap'],
   ['/sitemap.xml', 'teklifjet.vercel.app'],
 ];

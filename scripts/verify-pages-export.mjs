@@ -5,7 +5,12 @@ const root = process.cwd();
 const checks = [
   ['out/index.html', 'TeklifJet'],
   ['out/generator/index.html', 'Canlı teklif taslağı oluşturucu'],
+  ['out/sample/index.html', 'Örnek TeklifJet teslimatı'],
+  ['out/sample/index.html', '24 saat takip mesajı'],
   ['out/index.html', '/teklifjet/generator/'],
+  ['out/index.html', '/teklifjet/sample/'],
+  ['out/generator/index.html', '/teklifjet/sample/'],
+  ['out/sample/index.html', '/teklifjet/generator/'],
   ['out/generator/index.html', '/teklifjet/'],
   ['out/robots.txt', 'sitemap'],
   ['out/sitemap.xml', 'goktugozdem2.github.io/teklifjet'],

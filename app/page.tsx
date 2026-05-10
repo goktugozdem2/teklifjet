@@ -66,6 +66,7 @@ export default function Home() {
           <div className="cta-row">
             <a className="button primary" href={mailtoHref}>E-posta ile pilotu başlat</a>
             <a className="button secondary" href={`${siteBasePath}/generator/`}>Canlı demo oluştur</a>
+            <a className="button secondary" href={`${siteBasePath}/sample/`}>Örnek teslimatı gör</a>
             <a className="button secondary" href={`https://wa.me/?text=${whatsappText}`}>WhatsApp metnini aç</a>
           </div>
           <p className="microcopy">GitHub Pages üzerinde de çalışır: doğrudan e-posta taslağı açar, ₺499 pilotu manuel fatura/EFT ile kapatmaya uygundur.</p>
