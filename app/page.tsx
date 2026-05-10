@@ -64,11 +64,11 @@ export default function Home() {
             1 pilot müşteri kapatmak.
           </p>
           <div className="cta-row">
-            <a className="button primary" href="#basvur">₺499 pilot başvurusu</a>
+            <a className="button primary" href={mailtoHref}>E-posta ile pilotu başlat</a>
             <a className="button secondary" href={`${siteBasePath}/generator/`}>Canlı demo oluştur</a>
             <a className="button secondary" href={`https://wa.me/?text=${whatsappText}`}>WhatsApp metnini aç</a>
           </div>
-          <p className="microcopy">Kredi kartı entegrasyonu yoksa bile manuel fatura/EFT ile satılacak şekilde tasarlandı.</p>
+          <p className="microcopy">GitHub Pages üzerinde de çalışır: doğrudan e-posta taslağı açar, ₺499 pilotu manuel fatura/EFT ile kapatmaya uygundur.</p>
         </div>
 
         <aside className="panel" aria-label="Örnek teklif önizleme">

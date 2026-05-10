@@ -117,7 +117,7 @@ export default function GeneratorPage() {
             </ol>
             <div className="cta-row print-row">
               <button type="button" onClick={() => window.print()}>PDF olarak yazdır</button>
-              <a className="button secondary" href={mailtoHref}>₺499 pilotla bunu özelleştir</a>
+              <a className="button secondary" href={mailtoHref}>E-posta ile pilotu başlat</a>
             </div>
           </div>
         </article>
