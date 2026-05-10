@@ -25,6 +25,15 @@ npm run dev
 
 Env yoksa API 503 döner, landing formu mailto fallback açar.
 
+## Canlı demo
+
+`/generator` sayfası satış görüşmesinde kullanılacak canlı teklif taslağı üretir:
+
+- müşteri, hizmet, hedef, fiyat, süre ve güven unsurunu alır
+- teklif iskeleti + 24 saat / 72 saat / 7 gün takip mesajları üretir
+- yazdırma ile PDF çıktısı alınabilir
+- CTA, ₺499 pilot özelleştirmesine yönlendirir
+
 ## İlk outreach mesajı
 
 Selam, freelance/ajans tekliflerinde müşterinin cevap vermemesi problemini çözmek için TeklifJet’i kuruyorum. İlk 10 kişiye ₺499’a kendi teklif şablonunu + 3 takip mesajını birlikte hazırlıyorum. Ayda 3+ teklif gönderiyorsan sana 15 dakikada örnek çıkarayım mı?

@@ -3,6 +3,8 @@ import http from 'node:http';
 const checks = [
   ['/', 'TeklifJet'],
   ['/', '₺499 pilot'],
+  ['/generator', 'Canlı teklif taslağı oluşturucu'],
+  ['/generator', 'Teklif taslağını üret'],
   ['/robots.txt', 'sitemap'],
   ['/sitemap.xml', 'teklifjet.vercel.app'],
 ];

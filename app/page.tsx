@@ -60,6 +60,7 @@ export default function Home() {
           </p>
           <div className="cta-row">
             <a className="button primary" href="#basvur">₺499 pilot başvurusu</a>
+            <a className="button secondary" href="/generator">Canlı demo oluştur</a>
             <a className="button secondary" href={`https://wa.me/?text=${whatsappText}`}>WhatsApp metnini aç</a>
           </div>
           <p className="microcopy">Kredi kartı entegrasyonu yoksa bile manuel fatura/EFT ile satılacak şekilde tasarlandı.</p>
